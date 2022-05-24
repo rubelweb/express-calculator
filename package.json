@@ -7,8 +7,8 @@
   "scripts": {
     "start": "node app.js",
     "test": "jest",
-    "unit-test": "jest src/_tests_/unit",
-    "integration-test": "jest src/_tests_/integration"    
+    "unit-test": "jest src/__tests__/unit",
+    "integration-test": "jest src/__tests__/integration"    
   },
   "author": "Patrik Nygren",
   "license": "ISC",

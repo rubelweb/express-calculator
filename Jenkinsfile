@@ -1,7 +1,7 @@
 pipeline{
     agent none
     stages {
-        stage('Backend'){
+        /* stage('Backend'){
              agent{
                 docker { image 'maven:3.8.1-adoptopenjdk-11'} 
              }
@@ -18,6 +18,14 @@ pipeline{
                 echo 'Frontend...'
                 sh 'svn --version'
                 sh 'node --version'
+            }
+        } */
+
+        stage('Run npm') {
+            steps {
+                sh 'npm install'
+                sh 'npm run unit-test'
+                sh 'npm run integration-test'
             }
         }        
     }

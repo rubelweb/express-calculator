@@ -27,5 +27,5 @@
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
-  }
+  }  
 }

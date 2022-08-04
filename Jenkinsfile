@@ -13,7 +13,7 @@ pipeline {
         }
         stage('integration-tests'){
          when{
-            anyof {
+            anyOf {
                 branch 'develop'
                 branch 'main'
             }

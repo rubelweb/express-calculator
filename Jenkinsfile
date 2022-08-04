@@ -1,19 +1,19 @@
-pipeline{
+pipeline {
     agent none    
     stages {
         stage('Build'){
-          steps{
-            npm install
+          steps {
+            sh 'npm install'
           } 
         }
         stage('Unit-test'){
           steps{
-            npm run unit-test
+            sh 'npm run unit-test'
           } 
         }
-        stage('Build'){
+        stage('integration-test'){
           steps{
-            npm run integration-test
+            sh 'npm run integration-test'
           }
        }                
     }

@@ -1,17 +1,17 @@
 pipeline {
     agent none    
     stages {
-        stage('Build'){
+        stage('build'){
           steps {
             sh 'npm install'
           } 
         }
-        stage('Unit-test'){
+        stage('unit-tests'){
           steps{
             sh 'npm run unit-test'
           } 
         }
-        stage('integration-test'){
+        stage('integration-tests'){
           steps{
             sh 'npm run integration-test'
           }

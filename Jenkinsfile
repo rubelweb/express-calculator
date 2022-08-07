@@ -21,6 +21,14 @@ pipeline {
           steps{
             sh 'npm run integration-test'
           }
-       }                
+       }
+       stage('deploying-tests'){
+         when{
+            branch 'main'
+         }
+          steps{            
+            echo 'Deploying..'
+          }
+       }                     
     }
 }

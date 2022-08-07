@@ -8,7 +8,8 @@
     "start": "node app.js",
     "test": "jest",
     "unit-test": "jest src/__tests__/unit",
-    "integration-test": "jest src/__tests__/integration"
+    "integration-test": "jest src/__tests__/integration",
+    "e2e-test":"jest src/__tests__/e2e"
   },
   "author": "Patrik Nygren",
   "license": "ISC",
